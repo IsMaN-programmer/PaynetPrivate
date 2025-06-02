@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Pay Private</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="img/google-pay.ico" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="img/article-original.ico" />
+                    <h1>Pay Private</h1>
+                </div>
+            </nav>
+        </header>
+        <section id="home">
+            <div class="pay-table">
+                <form>
+                    <input type="text" placeholder="Введите номер карты" />
+                    <button class="green-b">Найти</button>
+                </form>
+                <form>
+                    <div class="menu-btn">🟢 Последние платежи 🟢</div>
+                    <div class="card-info">
+                       <div class="user1">
+                        <label for="user1">Madina Raxmatiova</label><br />
+                        <input type="text" id="user1" placeholder="5641 5890 4860 8230" disabled />
+                        <button class="green-b">Оплатить</button>
+                        <button class="red-b">Удалить</button><br />
+                        </div>
+                        <label for="user2">Madina Raxmatiova</label><br />
+                        <input type="text" id="user2" placeholder="5641 5890 4860 8230" disabled />
+                        <button class="green-b">Оплатить</button>
+                        <button class="red-b">Удалить</button>
+                    </div>
+                </form>
+                <form class="gg">
+                    <button class="green-b" id="createBtn">Создать</button><br />
+                    <div class="add-card" id="addCardForm" style="display: none">
+                        <input type="text" id="cardName" placeholder="Имя" /><br />
+                        <input type="text" id="cardNumber" placeholder="Номер карты" /><br />
+                        <button class="green-b" id="addCardBtn">Добавить карту</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="sum" style="display: none">
+            <div class="sum">
+            <form>
+                <input type="text" placeholder="Введите сумму">
+                <button class="green-b">Продолжить</button>
+            </form>
+            </div>
+        </section>
+        <section id="payment" style="display: none">
+            <div class="payment">
+                <img src="img/accept.png">
+                <h1>26 000 <span>сум</span></h1>
+                <p>Комиссия 0 сум</p>
+                <div class="block">
+                    <img src="img/bank.PNG">
+                    <h4>Madina Raxmatova</h4>
+                    <button>Выполнено</button>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
